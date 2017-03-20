@@ -19,7 +19,9 @@
             <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Resources/views/Default/index.html.twig</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/config/routing/publication.yml</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Resources/config/doctrine/Publication.orm.yml</file>
+            <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/views/Layouts/layout.html.twig</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Resources/config/doctrine/Notification.orm.yml</file>
+            <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/views/User/login.html.twig</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Controller/DefaultController.php</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/web/app.php</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/config/routing/user.yml</file>
