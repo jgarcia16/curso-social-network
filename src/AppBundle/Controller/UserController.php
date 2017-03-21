@@ -5,6 +5,7 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use BackendBundle\Entity\User;
 
 class UserController extends Controller
 {   
@@ -13,6 +14,18 @@ class UserController extends Controller
             "titulo"=>"Usuarios"
         ));
         die();
+    }
+    
+    public function registerAction(Request $request){
+       
+        $user= new User();
+        $form= $this->createForm(\AppBundle\Form\RegisterType::class,$user);
+        
+          return $this->render('AppBundle:User:register.html.twig', array(
+            "form"=>$form->createView()
+        ));
+        die();
+        
     }
 }
 
