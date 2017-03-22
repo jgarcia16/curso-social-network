@@ -6,9 +6,17 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use BackendBundle\Entity\User;
+use Symfony\Component\HttpFoundation\Session\Session;
 
 class UserController extends Controller
-{   
+{
+    private $session;
+    
+    function __construct() {
+        $this->session = new Session();
+    }
+
+    
     public function loginAction(Request $request){
         return $this->render('AppBundle:User:login.html.twig', array(
             "titulo"=>"Usuarios"
@@ -48,7 +56,7 @@ class UserController extends Controller
                             
                             if($flush==null){
                                 $status="Te has registrado correctamente";
-                                
+                                 $this->session->getFlashBag()->add("status",$status);
                                 return $this->redirect("login");
                             }else{
                                 
@@ -58,8 +66,8 @@ class UserController extends Controller
                             $status="El usuario ya existe";
                         }
                    }
-                   var_dump($status);
-                   die();
+                  
+                   $this->session->getFlashBag()->add("status",$status);
                }
            
           return $this->render('AppBundle:User:register.html.twig', array(
