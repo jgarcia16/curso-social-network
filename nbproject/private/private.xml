@@ -3,25 +3,29 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/BackendBundle.php</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/xampp/htdocs/curso-social-network/web/assets/css/style.css</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Entity/Following.php</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/app/config/security.yml</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Resources/config/doctrine/Following.orm.yml</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Controller/DefaultController.php</file>
-            <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Controller/PublicationController.php</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Resources/config/doctrine/Like.orm.yml</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Entity/PrivateMessage.php</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Entity/Publication.php</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/config/routing/publication.yml</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/views/User/login.html.twig</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Controller/DefaultController.php</file>
-            <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/config/routing/user.yml</file>
+            <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/AppBundle.php</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Resources/config/doctrine/PrivateMessage.orm.yml</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Entity/User.php</file>
+            <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Resources/config/services.yml</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Entity/Notification.php</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Controller/UserController.php</file>
+            <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/views/User/register.html.twig</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Resources/config/doctrine/User.orm.yml</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Form/RegisterType.php</file>
+            <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Resources/config/routing.yml</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/app/config/routing.yml</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Entity/Like.php</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Resources/views/Default/index.html.twig</file>
