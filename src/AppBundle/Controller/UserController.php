@@ -170,4 +170,8 @@ class UserController extends Controller {
         ));
     }
 
+    public function usersAction(Request $request){
+        var_dump("users action");
+        die();
+    }
 }
