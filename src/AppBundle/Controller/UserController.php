@@ -79,11 +79,9 @@ class UserController extends Controller {
                 } else {
                     $status = "El usuario ya existe";
                 }
-                
-                  $this->session->getFlashBag()->add("status", $status);
-            }
 
-          
+                $this->session->getFlashBag()->add("status", $status);
+            }
         }
 
         return $this->render('AppBundle:User:register.html.twig', array(
@@ -135,13 +133,13 @@ class UserController extends Controller {
                         $ext = $file->guessExtension();
                         if ($ext == "jpg" || $ext == "jpeg" || $ext == "png" || $ext == "gif") {
 
-                            $file_name = $user->getId().time().".".$ext;
+                            $file_name = $user->getId() . time() . "." . $ext;
                             $file->move("uploads/users", $file_name);
                             $user->setImage($file_name);
-                        } 
-                    }else {
-                            $user->setImage($user_img);
                         }
+                    } else {
+                        $user->setImage($user_img);
+                    }
 
                     /* almacena el dato en Doctrine a modo de objeto */
                     $em->persist($user);
@@ -153,13 +151,13 @@ class UserController extends Controller {
                     } else {
                         $status = "No se han podido modificar los datos";
                     }
-                }   else {
-                        $status = "El usuario ya existe";
-                    }
-                }else{
-                     $status = "No se han podido modificar los datos";
+                } else {
+                    $status = "El usuario ya existe";
                 }
-            
+            } else {
+                $status = "No se han podido modificar los datos";
+            }
+
 
             $this->session->getFlashBag()->add("status", $status);
             return $this->redirect("my-data");
@@ -170,8 +168,20 @@ class UserController extends Controller {
         ));
     }
 
-    public function usersAction(Request $request){
-        var_dump("users action");
-        die();
+    public function usersAction(Request $request) {
+        $em = $this->getDoctrine()->getManager();
+
+        $dql = "SELECT u FROM BackendBundle:User u";
+        $query = $em->createQuery($dql);
+
+        $paginator = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+                $query, $request->query->getInt('page', 1), 5
+        );
+        
+        return $this->render('AppBundle:User:users.html.twig',array(
+            'pagination'=>$pagination
+        ));
     }
+
 }
