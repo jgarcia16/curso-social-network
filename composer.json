@@ -1,6 +1,6 @@
 {
     "name": "symfony/framework-standard-edition",
-    "license": "MIT",
+    "license": "MT",
     "type": "project",
     "description": "The \"Symfony Standard Edition\" distribution",
     "autoload": {
