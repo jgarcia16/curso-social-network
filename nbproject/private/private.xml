@@ -18,6 +18,7 @@
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/views/Publication/home.html.twig</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/views/User/login.html.twig</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Controller/PublicationController.php</file>
+            <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/config/validation.yml</file>
         </group>
     </open-files>
 </project-private>

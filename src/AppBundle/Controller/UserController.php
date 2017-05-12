@@ -79,9 +79,11 @@ class UserController extends Controller {
                 } else {
                     $status = "El usuario ya existe";
                 }
+                
+                  $this->session->getFlashBag()->add("status", $status);
             }
 
-            $this->session->getFlashBag()->add("status", $status);
+          
         }
 
         return $this->render('AppBundle:User:register.html.twig', array(
