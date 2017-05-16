@@ -123,7 +123,7 @@ class UserController extends Controller {
 
                 $user_isset = $query->getResult();
 
-                if ($user->getEmail() == $user_isset[0]->getEmail() && $user->getNick() == $user_isset[0]->getNick() || count($user_isset) == 0) {
+                if (count($user_isset) == 0 ||($user->getEmail() == $user_isset[0]->getEmail() && $user->getNick() == $user_isset[0]->getNick()) ) {
 
                     //upload File
 
