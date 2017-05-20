@@ -171,7 +171,7 @@ class UserController extends Controller {
     public function usersAction(Request $request) {
         $em = $this->getDoctrine()->getManager();
 
-        $dql = "SELECT u FROM BackendBundle:User u";
+        $dql = "SELECT u FROM BackendBundle:User u ORDER BY u.id";
         $query = $em->createQuery($dql);
 
         $paginator = $this->get('knp_paginator');
@@ -183,5 +183,26 @@ class UserController extends Controller {
             'pagination'=>$pagination
         ));
     }
+    
+    public function searchAction(Request $request) {
+        $em = $this->getDoctrine()->getManager();
+        
+        $search=$request->query->get("search",null);
+        
+        if($search==null){
+            return $this->redirect($this->generateUrl("home_publications"));
+        }
+            
+        $dql = "SELECT u FROM BackendBundle:User u WHERE u.nick LIKE :search OR u.name LIKE :search or u.surname LIKE :search ORDER BY u.id";
+        $query = $em->createQuery($dql)->setParameter('search',"%$search%");
 
+        $paginator = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+                $query, $request->query->getInt('page', 1), 5
+        );
+        
+        return $this->render('AppBundle:User:users.html.twig',array(
+            'pagination'=>$pagination
+        ));
+    }
 }
