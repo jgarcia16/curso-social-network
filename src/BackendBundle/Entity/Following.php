@@ -36,7 +36,7 @@ class Following
     /**
      * Set followed
      *
-     * @param \BackendBundle\Entity\Users $followe
+     * @param \BackendBundle\Entity\User $followe
      *
      * @return Following
      */
@@ -60,7 +60,7 @@ class Following
     /**
      * Set user
      *
-     * @param \BackendBundle\Entity\Users $user
+     * @param \BackendBundle\Entity\User $user
      *
      * @return Following
      */

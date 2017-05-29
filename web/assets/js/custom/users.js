@@ -7,7 +7,7 @@
 
 $(document).ready(function(){
     
-jQuery.ias({
+/*jQuery.ias({
            container: '.box-users',
            item:'.user-item',
            pagination:'.pagination',
@@ -17,5 +17,23 @@ jQuery.ias({
                });
                
 
+    
+});*/
+    
+    followButtons();
+    
+    function followButtons(){
+       $(".btn-follow").unbind("click").click(function(){
+                   $.ajax({
+                       url: URL+'/follow',
+                       type: 'POST',
+                       data: {followed: $(this).attr("data-followed")},
+                       succes: function(response){
+                           console.log(response);
+                       }
+                   }
+                    );
+       });
+    }
     
 });
