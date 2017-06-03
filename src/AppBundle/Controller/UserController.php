@@ -109,7 +109,7 @@ class UserController extends Controller {
     public function editUserAction(Request $request) {
         $user = $this->getUser();
         $form = $this->createForm(UserType::class, $user);
-        $user_image = $user->getImage();
+        $user_img = $user->getImage();
 
         $form->handleRequest($request);
         if ($form->isSubmitted()) {
