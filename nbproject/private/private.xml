@@ -21,11 +21,13 @@
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/views/Layouts/custom_pagination.html.twig</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/config/routing/following.yml</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Form/RegisterType.php</file>
+            <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Controller/PublicationController.php</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/config/validation.yml</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/web/assets/js/custom/users.js</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/views/Layouts/layout.html.twig</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/views/User/users.html.twig</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Twig/FollowingExtension.php</file>
+            <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/views/Publication/home.html.twig</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/views/User/edit_user.html.twig</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/config/routing/user.yml</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/BackendBundle/Entity/User.php</file>
