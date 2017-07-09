@@ -47,7 +47,7 @@ class PublicationType extends AbstractType
                     )
 				))
 
-                ->add('Registrarse', SubmitType::class, array(
+                ->add('Enviar', SubmitType::class, array(
                     "attr"=>array(
                         "class"=>"form-submit btn btn-success"
                     )
