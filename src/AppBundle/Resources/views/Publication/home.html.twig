@@ -6,7 +6,14 @@
             <h1 class="box-header">Timeline</h1>
             </hr>
             <div class="box-content">
-                PUBLICACIONES LIST
+                {% for publication in query %}
+                    {{publication.text}}
+                    <hr/>
+                {% endfor %}    
+                
+                <div class="navigation">
+                    {{knp_pagination_render(pagination) }}
+                </div>    
             </div>
         </div>    
         <div id="user-card" class="col-lg-4 pull-left box-default">
