@@ -6,7 +6,7 @@
             <h1 class="box-header">Timeline</h1>
             </hr>
             <div class="box-content">
-                {% for publication in query %}
+                {% for publication in pagination %}
                     {{publication.text}}
                     <hr/>
                 {% endfor %}    

@@ -1,7 +1,5 @@
 <?php
-
 namespace AppBundle\Controller;
-
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -20,6 +18,7 @@ class PublicationController extends Controller
     
       public function indexAction(Request $request){
            $em=$this->getDoctrine()->getManager();
+		   $publication=new Publication();
            $user=$this->getUser();
            $publication=new Publication();
 		   $form= $this->createForm(PublicationType::class, $publication);
@@ -80,20 +79,20 @@ class PublicationController extends Controller
                     }else{
                         $status="Error al añadir la publicación";
                     }
+                    
       
-                 
                      $this->session->getFlashBag()->add("status",$status);
                      return $this->redirectToRoute("home_publications");
                    }
-                   
-                   //$publications=$this->getPublications($request);
-                   
+                    $publications=$this->getPublications($request);
+                    
 		   return $this->render("AppBundle:Publication:home.html.twig",array(
 				'form' => $form->createView(),
                                 'pagination'=>$publications
 		   ));
-          }
-          
+      }
+      
+      
         public function getPublications($request){
               $em=$this->getDoctrine()->getManager();
               $user=$this->getUser();
@@ -109,7 +108,7 @@ class PublicationController extends Controller
               
               $following_array=array();
               foreach ($following as $follow){
-                  $following_array() = $follow->getFollowed();
+                  $following_array[] = $follow->getFollowed();
               }
               
               $query=$publications_repo->createQueryBuilder('p')
@@ -119,17 +118,16 @@ class PublicationController extends Controller
                                         ->orderBy('p.id','DESC')
                                         ->getQuery();
               
-              /*$paginator=$this->get('knp_paginator');
+              $paginator=$this->get('knp_paginator');
               $pagination=$paginator->paginate(
                       $query,
                       $request->query->getInt('page',1),
                       5
                       );
               
-              return $pagination;*/
-              
-              $publications=$query->getResult();
-             return $publications;
+              return $pagination;
+           
           }
-}
 
+}      
+?>
