@@ -14,9 +14,11 @@
         <group>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Form/PublicationType.php</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/web/assets/css/style.css</file>
+            <file>file:/C:/xampp/htdocs/curso-social-network/app/config/services.yml</file>
+            <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Twig/LongTimeExtension.php</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Controller/UserController.php</file>
-            <file>file:/C:/xampp/htdocs/curso-social-network/web/uploads/users/111494593794.jpeg</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Resources/views/Publication/home.html.twig</file>
+            <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Twig/FollowingExtension.php</file>
             <file>file:/C:/xampp/htdocs/curso-social-network/src/AppBundle/Controller/PublicationController.php</file>
         </group>
     </open-files>

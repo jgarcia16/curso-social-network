@@ -126,3 +126,16 @@ body{
 .pub-date{
     color:gray;
 }
+
+.pub-image img{
+    width:100%;
+    text-align:center;
+    display: block;
+    margin: 0px auto;
+}
+
+.publication-item .glyphicon{
+    margin-right: 7px;
+    cursor: pointer;
+    color: #444 !important;
+}
