@@ -38,6 +38,10 @@
                                 
                                 <p> {{publication.text}} </p>
                                  
+                                {% if(app.user.id is defined) and (app.user.id == publication.user.id) %}
+                                     <span data-id="{{publication.id}}" class="btn-delete-pub glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                {% endif %}
+                                
                                 {% if(publication.document is defined) and (publication.document !=null)%}
                                     <a href="{{ asset('uploads/publications/documents/'~publication.document)}}"
                                        class="btn-doc glyphicon glyphicon-save" aria-hidden="true" traget="_blank">
