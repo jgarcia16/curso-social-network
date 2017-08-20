@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-    $('[data-toggle="tooltip"]').tooltip();
-    
     $(".btn-img").unbind("click").click(function(){
         $(this).parent().find('.pub-image').fadeToggle();
     });
@@ -17,7 +15,5 @@ $(document).ready(function(){
           }
        });
     });
-    
-    
 
 });
